@@ -14996,53 +14996,53 @@
 	"samplers": [
 		{
 			"name": "siteM_BaseColor",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "siteM_MetallicRoughness",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "columnM_BaseColor",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "columnM_MetallicRoughness",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "columnM_Normal",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "roofM_BaseColor",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "roofM_Normal",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "pathM_BaseColor",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "pathM_MetallicRoughness",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		},
 		{
 			"name": "pathM_Normal",
-			"minFilter": 9987,
-			"magFilter": 9729
+			"minFilter": 9984,
+			"magFilter": 9728
 		}
 	],
 	"scenes": [
