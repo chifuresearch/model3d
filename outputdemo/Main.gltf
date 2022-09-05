@@ -11694,116 +11694,98 @@
 			"target": 34962
 		}
 	],
-	"cameras": [
-		{
-			"name": "CineCameraActor_0",
-			"type": "perspective",
-			"perspective":
-			{
-				"aspectRatio": 1.77774608,
-				"yfov": 0.278231084,
-				"zfar": 20971.5195,
-				"znear": 0.099999994
-			}
-		}
-	],
 	"images": [
 		{
-			"uri": "Bare_concrete_03_BaseColor.png"
+			"uri": "siteM_BaseColor.png"
 		},
 		{
-			"uri": "Chestnut_01_A_BaseColor.png"
+			"uri": "siteM_MetallicRoughness.png"
 		},
 		{
-			"uri": "Chestnut_01_A_MetallicRoughness.png"
+			"uri": "columnM_BaseColor.png"
 		},
 		{
-			"uri": "Chestnut_01_A_Normal.png"
+			"uri": "columnM_MetallicRoughness.png"
 		},
 		{
-			"uri": "Ipe_A_BaseColor.png"
+			"uri": "columnM_Normal.png"
 		},
 		{
-			"uri": "Ipe_A_MetallicRoughness.png"
+			"uri": "roofM_BaseColor.png"
 		},
 		{
-			"uri": "Ipe_A_Normal.png"
+			"uri": "roofM_Normal.png"
+		},
+		{
+			"uri": "pathM_BaseColor.png"
+		},
+		{
+			"uri": "pathM_MetallicRoughness.png"
+		},
+		{
+			"uri": "pathM_Normal.png"
 		}
 	],
 	"materials": [
 		{
-			"name": "Bare_concrete_03",
+			"name": "siteM",
 			"pbrMetallicRoughness":
 			{
 				"baseColorTexture":
 				{
 					"index": 0
 				},
-				"metallicFactor": 0
+				"metallicRoughnessTexture":
+				{
+					"index": 1
+				}
 			},
 			"alphaMode": "MASK",
 			"alphaCutoff": 0.333299994
 		},
 		{
-			"name": "Bronze",
-			"pbrMetallicRoughness":
-			{
-				"baseColorFactor": [ 0.610495567,
-					0.212230757,
-					0.0318960324,
-					0
-				],
-				"roughnessFactor": 0.247058839
-			},
-			"alphaMode": "MASK",
-			"alphaCutoff": 0.333299994
-		},
-		{
-			"name": "Dark_blue_tinted_glass",
-			"pbrMetallicRoughness":
-			{
-				"baseColorFactor": [ 0.337163627,
-					0.327778101,
-					1,
-					0
-				],
-				"metallicFactor": 0,
-				"roughnessFactor": 0
-			},
-			"alphaMode": "BLEND"
-		},
-		{
-			"name": "Chestnut_01_A",
+			"name": "columnM",
 			"pbrMetallicRoughness":
 			{
 				"baseColorTexture":
 				{
-					"index": 1
+					"index": 2
 				},
 				"metallicRoughnessTexture":
 				{
-					"index": 2
+					"index": 3
 				}
 			},
 			"normalTexture":
 			{
-				"index": 3
+				"index": 4
 			},
 			"alphaMode": "MASK",
 			"alphaCutoff": 0.333299994
 		},
 		{
-			"name": "Ipe_A",
+			"name": "blockM",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [ 1,
+					1,
+					1,
+					0
+				],
+				"roughnessFactor": 0
+			},
+			"alphaMode": "MASK",
+			"alphaCutoff": 0.333299994
+		},
+		{
+			"name": "roofM",
 			"pbrMetallicRoughness":
 			{
 				"baseColorTexture":
 				{
-					"index": 4
-				},
-				"metallicRoughnessTexture":
-				{
 					"index": 5
-				}
+				},
+				"roughnessFactor": 0.168627456
 			},
 			"normalTexture":
 			{
@@ -11811,11 +11793,31 @@
 			},
 			"alphaMode": "MASK",
 			"alphaCutoff": 0.333299994
+		},
+		{
+			"name": "pathM",
+			"pbrMetallicRoughness":
+			{
+				"baseColorTexture":
+				{
+					"index": 7
+				},
+				"metallicRoughnessTexture":
+				{
+					"index": 8
+				}
+			},
+			"normalTexture":
+			{
+				"index": 9
+			},
+			"alphaMode": "MASK",
+			"alphaCutoff": 0.333299994
 		}
 	],
 	"meshes": [
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject",
+			"name": "site1",
 			"primitives": [
 				{
 					"attributes":
@@ -11832,7 +11834,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_2",
+			"name": "site0",
 			"primitives": [
 				{
 					"attributes":
@@ -11849,7 +11851,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject",
+			"name": "column15",
 			"primitives": [
 				{
 					"attributes":
@@ -11866,7 +11868,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_2",
+			"name": "column14",
 			"primitives": [
 				{
 					"attributes":
@@ -11883,7 +11885,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_3",
+			"name": "column13",
 			"primitives": [
 				{
 					"attributes":
@@ -11900,7 +11902,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_4",
+			"name": "column12",
 			"primitives": [
 				{
 					"attributes":
@@ -11917,7 +11919,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_5",
+			"name": "column11",
 			"primitives": [
 				{
 					"attributes":
@@ -11934,7 +11936,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_6",
+			"name": "column10",
 			"primitives": [
 				{
 					"attributes":
@@ -11951,7 +11953,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_7",
+			"name": "column9",
 			"primitives": [
 				{
 					"attributes":
@@ -11968,7 +11970,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_8",
+			"name": "column8",
 			"primitives": [
 				{
 					"attributes":
@@ -11985,7 +11987,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_9",
+			"name": "column7",
 			"primitives": [
 				{
 					"attributes":
@@ -12002,7 +12004,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_10",
+			"name": "column6",
 			"primitives": [
 				{
 					"attributes":
@@ -12019,7 +12021,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_11",
+			"name": "column5",
 			"primitives": [
 				{
 					"attributes":
@@ -12036,7 +12038,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_12",
+			"name": "column4",
 			"primitives": [
 				{
 					"attributes":
@@ -12053,7 +12055,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_13",
+			"name": "column3",
 			"primitives": [
 				{
 					"attributes":
@@ -12070,7 +12072,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_14",
+			"name": "column2",
 			"primitives": [
 				{
 					"attributes":
@@ -12087,7 +12089,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_15",
+			"name": "column1",
 			"primitives": [
 				{
 					"attributes":
@@ -12104,7 +12106,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_16",
+			"name": "column0",
 			"primitives": [
 				{
 					"attributes":
@@ -12121,7 +12123,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_17",
+			"name": "block35",
 			"primitives": [
 				{
 					"attributes":
@@ -12138,7 +12140,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_18",
+			"name": "block34",
 			"primitives": [
 				{
 					"attributes":
@@ -12155,7 +12157,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_19",
+			"name": "block33",
 			"primitives": [
 				{
 					"attributes":
@@ -12172,7 +12174,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_20",
+			"name": "block32",
 			"primitives": [
 				{
 					"attributes":
@@ -12189,7 +12191,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_21",
+			"name": "block31",
 			"primitives": [
 				{
 					"attributes":
@@ -12206,7 +12208,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_22",
+			"name": "block30",
 			"primitives": [
 				{
 					"attributes":
@@ -12223,7 +12225,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_23",
+			"name": "block29",
 			"primitives": [
 				{
 					"attributes":
@@ -12240,7 +12242,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_24",
+			"name": "block28",
 			"primitives": [
 				{
 					"attributes":
@@ -12257,7 +12259,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_25",
+			"name": "block27",
 			"primitives": [
 				{
 					"attributes":
@@ -12274,7 +12276,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_26",
+			"name": "block26",
 			"primitives": [
 				{
 					"attributes":
@@ -12291,7 +12293,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_27",
+			"name": "block25",
 			"primitives": [
 				{
 					"attributes":
@@ -12308,7 +12310,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_28",
+			"name": "block24",
 			"primitives": [
 				{
 					"attributes":
@@ -12325,7 +12327,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_29",
+			"name": "block23",
 			"primitives": [
 				{
 					"attributes":
@@ -12342,7 +12344,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_30",
+			"name": "block22",
 			"primitives": [
 				{
 					"attributes":
@@ -12359,7 +12361,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_31",
+			"name": "block21",
 			"primitives": [
 				{
 					"attributes":
@@ -12376,7 +12378,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_32",
+			"name": "block20",
 			"primitives": [
 				{
 					"attributes":
@@ -12393,7 +12395,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_33",
+			"name": "block19",
 			"primitives": [
 				{
 					"attributes":
@@ -12410,7 +12412,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_34",
+			"name": "block18",
 			"primitives": [
 				{
 					"attributes":
@@ -12427,7 +12429,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_35",
+			"name": "block17",
 			"primitives": [
 				{
 					"attributes":
@@ -12444,7 +12446,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_36",
+			"name": "block16",
 			"primitives": [
 				{
 					"attributes":
@@ -12461,7 +12463,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_37",
+			"name": "block15",
 			"primitives": [
 				{
 					"attributes":
@@ -12478,7 +12480,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_38",
+			"name": "block14",
 			"primitives": [
 				{
 					"attributes":
@@ -12495,7 +12497,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_39",
+			"name": "block13",
 			"primitives": [
 				{
 					"attributes":
@@ -12512,7 +12514,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_40",
+			"name": "block12",
 			"primitives": [
 				{
 					"attributes":
@@ -12529,7 +12531,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_41",
+			"name": "block11",
 			"primitives": [
 				{
 					"attributes":
@@ -12546,7 +12548,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_42",
+			"name": "block10",
 			"primitives": [
 				{
 					"attributes":
@@ -12563,7 +12565,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_43",
+			"name": "block9",
 			"primitives": [
 				{
 					"attributes":
@@ -12580,7 +12582,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_44",
+			"name": "block8",
 			"primitives": [
 				{
 					"attributes":
@@ -12597,7 +12599,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_45",
+			"name": "block7",
 			"primitives": [
 				{
 					"attributes":
@@ -12614,7 +12616,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_46",
+			"name": "block6",
 			"primitives": [
 				{
 					"attributes":
@@ -12631,7 +12633,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_47",
+			"name": "block5",
 			"primitives": [
 				{
 					"attributes":
@@ -12648,7 +12650,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_48",
+			"name": "block4",
 			"primitives": [
 				{
 					"attributes":
@@ -12665,7 +12667,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_49",
+			"name": "block3",
 			"primitives": [
 				{
 					"attributes":
@@ -12682,7 +12684,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_50",
+			"name": "block2",
 			"primitives": [
 				{
 					"attributes":
@@ -12699,7 +12701,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_51",
+			"name": "block1",
 			"primitives": [
 				{
 					"attributes":
@@ -12716,7 +12718,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_52",
+			"name": "block0",
 			"primitives": [
 				{
 					"attributes":
@@ -12733,7 +12735,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_3",
+			"name": "roof84",
 			"primitives": [
 				{
 					"attributes":
@@ -12750,7 +12752,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_4",
+			"name": "roof83",
 			"primitives": [
 				{
 					"attributes":
@@ -12767,7 +12769,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_5",
+			"name": "roof82",
 			"primitives": [
 				{
 					"attributes":
@@ -12784,7 +12786,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_6",
+			"name": "roof81",
 			"primitives": [
 				{
 					"attributes":
@@ -12801,7 +12803,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_7",
+			"name": "roof80",
 			"primitives": [
 				{
 					"attributes":
@@ -12818,7 +12820,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_8",
+			"name": "roof79",
 			"primitives": [
 				{
 					"attributes":
@@ -12835,7 +12837,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_9",
+			"name": "roof78",
 			"primitives": [
 				{
 					"attributes":
@@ -12852,7 +12854,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_10",
+			"name": "roof77",
 			"primitives": [
 				{
 					"attributes":
@@ -12869,7 +12871,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_11",
+			"name": "roof76",
 			"primitives": [
 				{
 					"attributes":
@@ -12886,7 +12888,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_12",
+			"name": "roof75",
 			"primitives": [
 				{
 					"attributes":
@@ -12903,7 +12905,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_13",
+			"name": "roof74",
 			"primitives": [
 				{
 					"attributes":
@@ -12920,7 +12922,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_14",
+			"name": "roof73",
 			"primitives": [
 				{
 					"attributes":
@@ -12937,7 +12939,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_15",
+			"name": "roof72",
 			"primitives": [
 				{
 					"attributes":
@@ -12954,7 +12956,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_16",
+			"name": "roof71",
 			"primitives": [
 				{
 					"attributes":
@@ -12971,7 +12973,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_17",
+			"name": "roof70",
 			"primitives": [
 				{
 					"attributes":
@@ -12988,7 +12990,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_18",
+			"name": "roof69",
 			"primitives": [
 				{
 					"attributes":
@@ -13005,7 +13007,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_19",
+			"name": "roof68",
 			"primitives": [
 				{
 					"attributes":
@@ -13022,7 +13024,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_20",
+			"name": "roof67",
 			"primitives": [
 				{
 					"attributes":
@@ -13039,7 +13041,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_21",
+			"name": "roof66",
 			"primitives": [
 				{
 					"attributes":
@@ -13056,7 +13058,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_22",
+			"name": "roof65",
 			"primitives": [
 				{
 					"attributes":
@@ -13073,7 +13075,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_23",
+			"name": "roof64",
 			"primitives": [
 				{
 					"attributes":
@@ -13090,7 +13092,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_24",
+			"name": "roof63",
 			"primitives": [
 				{
 					"attributes":
@@ -13107,7 +13109,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_25",
+			"name": "roof62",
 			"primitives": [
 				{
 					"attributes":
@@ -13124,7 +13126,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_26",
+			"name": "roof61",
 			"primitives": [
 				{
 					"attributes":
@@ -13141,7 +13143,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_27",
+			"name": "roof60",
 			"primitives": [
 				{
 					"attributes":
@@ -13158,7 +13160,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_28",
+			"name": "roof59",
 			"primitives": [
 				{
 					"attributes":
@@ -13175,7 +13177,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_29",
+			"name": "roof58",
 			"primitives": [
 				{
 					"attributes":
@@ -13192,7 +13194,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_30",
+			"name": "roof57",
 			"primitives": [
 				{
 					"attributes":
@@ -13209,7 +13211,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_31",
+			"name": "roof56",
 			"primitives": [
 				{
 					"attributes":
@@ -13226,7 +13228,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_32",
+			"name": "roof55",
 			"primitives": [
 				{
 					"attributes":
@@ -13243,7 +13245,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_33",
+			"name": "roof54",
 			"primitives": [
 				{
 					"attributes":
@@ -13260,7 +13262,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_34",
+			"name": "roof53",
 			"primitives": [
 				{
 					"attributes":
@@ -13277,7 +13279,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_35",
+			"name": "roof52",
 			"primitives": [
 				{
 					"attributes":
@@ -13294,7 +13296,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_36",
+			"name": "roof51",
 			"primitives": [
 				{
 					"attributes":
@@ -13311,7 +13313,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_37",
+			"name": "roof50",
 			"primitives": [
 				{
 					"attributes":
@@ -13328,7 +13330,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_38",
+			"name": "roof49",
 			"primitives": [
 				{
 					"attributes":
@@ -13345,7 +13347,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_39",
+			"name": "roof48",
 			"primitives": [
 				{
 					"attributes":
@@ -13362,7 +13364,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_40",
+			"name": "roof47",
 			"primitives": [
 				{
 					"attributes":
@@ -13379,7 +13381,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_41",
+			"name": "roof46",
 			"primitives": [
 				{
 					"attributes":
@@ -13396,7 +13398,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_42",
+			"name": "roof45",
 			"primitives": [
 				{
 					"attributes":
@@ -13413,7 +13415,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_43",
+			"name": "roof44",
 			"primitives": [
 				{
 					"attributes":
@@ -13430,7 +13432,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_44",
+			"name": "roof43",
 			"primitives": [
 				{
 					"attributes":
@@ -13447,7 +13449,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_45",
+			"name": "roof42",
 			"primitives": [
 				{
 					"attributes":
@@ -13464,7 +13466,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_46",
+			"name": "roof41",
 			"primitives": [
 				{
 					"attributes":
@@ -13481,7 +13483,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_47",
+			"name": "roof40",
 			"primitives": [
 				{
 					"attributes":
@@ -13498,7 +13500,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_48",
+			"name": "roof39",
 			"primitives": [
 				{
 					"attributes":
@@ -13515,7 +13517,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_49",
+			"name": "roof38",
 			"primitives": [
 				{
 					"attributes":
@@ -13532,7 +13534,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_50",
+			"name": "roof37",
 			"primitives": [
 				{
 					"attributes":
@@ -13549,7 +13551,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_51",
+			"name": "roof36",
 			"primitives": [
 				{
 					"attributes":
@@ -13566,7 +13568,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_52",
+			"name": "roof35",
 			"primitives": [
 				{
 					"attributes":
@@ -13583,7 +13585,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_53",
+			"name": "roof34",
 			"primitives": [
 				{
 					"attributes":
@@ -13600,7 +13602,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_54",
+			"name": "roof33",
 			"primitives": [
 				{
 					"attributes":
@@ -13617,7 +13619,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_55",
+			"name": "roof32",
 			"primitives": [
 				{
 					"attributes":
@@ -13634,7 +13636,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_56",
+			"name": "roof31",
 			"primitives": [
 				{
 					"attributes":
@@ -13651,7 +13653,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_57",
+			"name": "roof30",
 			"primitives": [
 				{
 					"attributes":
@@ -13668,7 +13670,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_58",
+			"name": "roof29",
 			"primitives": [
 				{
 					"attributes":
@@ -13685,7 +13687,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_59",
+			"name": "roof28",
 			"primitives": [
 				{
 					"attributes":
@@ -13702,7 +13704,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_60",
+			"name": "roof27",
 			"primitives": [
 				{
 					"attributes":
@@ -13719,7 +13721,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_61",
+			"name": "roof26",
 			"primitives": [
 				{
 					"attributes":
@@ -13736,7 +13738,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_62",
+			"name": "roof25",
 			"primitives": [
 				{
 					"attributes":
@@ -13753,7 +13755,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_63",
+			"name": "roof24",
 			"primitives": [
 				{
 					"attributes":
@@ -13770,7 +13772,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_64",
+			"name": "roof23",
 			"primitives": [
 				{
 					"attributes":
@@ -13787,7 +13789,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_65",
+			"name": "roof22",
 			"primitives": [
 				{
 					"attributes":
@@ -13804,7 +13806,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_66",
+			"name": "roof21",
 			"primitives": [
 				{
 					"attributes":
@@ -13821,7 +13823,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_67",
+			"name": "roof20",
 			"primitives": [
 				{
 					"attributes":
@@ -13838,7 +13840,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_68",
+			"name": "roof19",
 			"primitives": [
 				{
 					"attributes":
@@ -13855,7 +13857,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_69",
+			"name": "roof18",
 			"primitives": [
 				{
 					"attributes":
@@ -13872,7 +13874,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_53",
+			"name": "roof17",
 			"primitives": [
 				{
 					"attributes":
@@ -13889,7 +13891,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_70",
+			"name": "roof16",
 			"primitives": [
 				{
 					"attributes":
@@ -13906,7 +13908,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_71",
+			"name": "roof15",
 			"primitives": [
 				{
 					"attributes":
@@ -13923,7 +13925,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_72",
+			"name": "roof14",
 			"primitives": [
 				{
 					"attributes":
@@ -13940,7 +13942,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_73",
+			"name": "roof13",
 			"primitives": [
 				{
 					"attributes":
@@ -13957,7 +13959,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_74",
+			"name": "roof12",
 			"primitives": [
 				{
 					"attributes":
@@ -13974,7 +13976,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_75",
+			"name": "roof11",
 			"primitives": [
 				{
 					"attributes":
@@ -13991,7 +13993,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_76",
+			"name": "roof10",
 			"primitives": [
 				{
 					"attributes":
@@ -14008,7 +14010,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_54",
+			"name": "roof9",
 			"primitives": [
 				{
 					"attributes":
@@ -14025,7 +14027,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_77",
+			"name": "roof8",
 			"primitives": [
 				{
 					"attributes":
@@ -14042,7 +14044,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_78",
+			"name": "roof7",
 			"primitives": [
 				{
 					"attributes":
@@ -14059,7 +14061,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_79",
+			"name": "roof6",
 			"primitives": [
 				{
 					"attributes":
@@ -14076,7 +14078,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_80",
+			"name": "roof5",
 			"primitives": [
 				{
 					"attributes":
@@ -14093,7 +14095,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_81",
+			"name": "roof4",
 			"primitives": [
 				{
 					"attributes":
@@ -14110,7 +14112,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_82",
+			"name": "roof2",
 			"primitives": [
 				{
 					"attributes":
@@ -14127,7 +14129,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_83",
+			"name": "roof1",
 			"primitives": [
 				{
 					"attributes":
@@ -14144,7 +14146,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_84",
+			"name": "roof0",
 			"primitives": [
 				{
 					"attributes":
@@ -14161,7 +14163,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_85",
+			"name": "path7",
 			"primitives": [
 				{
 					"attributes":
@@ -14178,7 +14180,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_86",
+			"name": "path6",
 			"primitives": [
 				{
 					"attributes":
@@ -14195,7 +14197,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_87",
+			"name": "path5",
 			"primitives": [
 				{
 					"attributes":
@@ -14212,7 +14214,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_88",
+			"name": "path4",
 			"primitives": [
 				{
 					"attributes":
@@ -14229,7 +14231,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_89",
+			"name": "path3",
 			"primitives": [
 				{
 					"attributes":
@@ -14246,7 +14248,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_90",
+			"name": "path2",
 			"primitives": [
 				{
 					"attributes":
@@ -14263,7 +14265,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_91",
+			"name": "path1",
 			"primitives": [
 				{
 					"attributes":
@@ -14280,7 +14282,7 @@
 			]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_92",
+			"name": "path0",
 			"primitives": [
 				{
 					"attributes":
@@ -14362,691 +14364,683 @@
 			]
 		},
 		{
-			"name": "CineCameraActor_0_SceneComponent",
-			"translation": [ -62.7405586,
-				16.8082123,
-				31.7008514
-			],
-			"rotation": [ -0.0116830701,
-				0.121347032,
-				-0.0951224864,
-				0.987972736
-			],
-			"children": [ 9 ]
-		},
-		{
-			"name": "CineCameraActor_0_CameraComponent",
-			"children": [ 10 ]
-		},
-		{
-			"name": "CineCameraActor_0",
-			"rotation": [ -0,
-				-0.707106769,
-				0,
-				0.707106709
-			],
-			"camera": 0
-		},
-		{
 			"name": "DefaultPhysicsVolume_0_BrushComponent0"
+		},
+		{
+			"name": "Addin_Addin"
 		},
 		{
 			"name": "AbstractNavData-Default_SceneComp"
 		},
 		{
 			"name": "tasktm_tasktm",
-			"children": [ 14 ]
+			"children": [ 12 ]
 		},
 		{
-			"name": "Addin_Addin",
-			"children": [ 15 ]
+			"name": "Addin_2_Addin",
+			"children": [ 13 ]
 		},
 		{
 			"name": "task_3dm_task_3dm",
-			"children": [ 16, 19, 36, 73, 159 ]
+			"children": [ 14, 17, 34, 71, 157 ]
 		},
 		{
 			"name": "site_site",
-			"children": [ 17, 18 ]
+			"children": [ 15, 16 ]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_StaticMeshComponent0",
+			"name": "site1_StaticMeshComponent0",
 			"mesh": 0
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_2_StaticMeshComponent0",
+			"name": "site0_StaticMeshComponent0",
 			"mesh": 1
 		},
 		{
 			"name": "column_column",
-			"children": [ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ]
+			"children": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_StaticMeshComponent0",
+			"name": "column15_StaticMeshComponent0",
 			"mesh": 2
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_2_StaticMeshComponent0",
+			"name": "column14_StaticMeshComponent0",
 			"mesh": 3
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_3_StaticMeshComponent0",
+			"name": "column13_StaticMeshComponent0",
 			"mesh": 4
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_4_StaticMeshComponent0",
+			"name": "column12_StaticMeshComponent0",
 			"mesh": 5
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_5_StaticMeshComponent0",
+			"name": "column11_StaticMeshComponent0",
 			"mesh": 6
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_6_StaticMeshComponent0",
+			"name": "column10_StaticMeshComponent0",
 			"mesh": 7
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_7_StaticMeshComponent0",
+			"name": "column9_StaticMeshComponent0",
 			"mesh": 8
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_8_StaticMeshComponent0",
+			"name": "column8_StaticMeshComponent0",
 			"mesh": 9
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_9_StaticMeshComponent0",
+			"name": "column7_StaticMeshComponent0",
 			"mesh": 10
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_10_StaticMeshComponent0",
+			"name": "column6_StaticMeshComponent0",
 			"mesh": 11
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_11_StaticMeshComponent0",
+			"name": "column5_StaticMeshComponent0",
 			"mesh": 12
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_12_StaticMeshComponent0",
+			"name": "column4_StaticMeshComponent0",
 			"mesh": 13
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_13_StaticMeshComponent0",
+			"name": "column3_StaticMeshComponent0",
 			"mesh": 14
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_14_StaticMeshComponent0",
+			"name": "column2_StaticMeshComponent0",
 			"mesh": 15
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_15_StaticMeshComponent0",
+			"name": "column1_StaticMeshComponent0",
 			"mesh": 16
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_16_StaticMeshComponent0",
+			"name": "column0_StaticMeshComponent0",
 			"mesh": 17
 		},
 		{
 			"name": "block_block",
-			"children": [ 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72 ]
+			"children": [ 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70 ]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_17_StaticMeshComponent0",
+			"name": "block35_StaticMeshComponent0",
 			"mesh": 18
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_18_StaticMeshComponent0",
+			"name": "block34_StaticMeshComponent0",
 			"mesh": 19
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_19_StaticMeshComponent0",
+			"name": "block33_StaticMeshComponent0",
 			"mesh": 20
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_20_StaticMeshComponent0",
+			"name": "block32_StaticMeshComponent0",
 			"mesh": 21
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_21_StaticMeshComponent0",
+			"name": "block31_StaticMeshComponent0",
 			"mesh": 22
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_22_StaticMeshComponent0",
+			"name": "block30_StaticMeshComponent0",
 			"mesh": 23
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_23_StaticMeshComponent0",
+			"name": "block29_StaticMeshComponent0",
 			"mesh": 24
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_24_StaticMeshComponent0",
+			"name": "block28_StaticMeshComponent0",
 			"mesh": 25
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_25_StaticMeshComponent0",
+			"name": "block27_StaticMeshComponent0",
 			"mesh": 26
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_26_StaticMeshComponent0",
+			"name": "block26_StaticMeshComponent0",
 			"mesh": 27
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_27_StaticMeshComponent0",
+			"name": "block25_StaticMeshComponent0",
 			"mesh": 28
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_28_StaticMeshComponent0",
+			"name": "block24_StaticMeshComponent0",
 			"mesh": 29
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_29_StaticMeshComponent0",
+			"name": "block23_StaticMeshComponent0",
 			"mesh": 30
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_30_StaticMeshComponent0",
+			"name": "block22_StaticMeshComponent0",
 			"mesh": 31
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_31_StaticMeshComponent0",
+			"name": "block21_StaticMeshComponent0",
 			"mesh": 32
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_32_StaticMeshComponent0",
+			"name": "block20_StaticMeshComponent0",
 			"mesh": 33
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_33_StaticMeshComponent0",
+			"name": "block19_StaticMeshComponent0",
 			"mesh": 34
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_34_StaticMeshComponent0",
+			"name": "block18_StaticMeshComponent0",
 			"mesh": 35
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_35_StaticMeshComponent0",
+			"name": "block17_StaticMeshComponent0",
 			"mesh": 36
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_36_StaticMeshComponent0",
+			"name": "block16_StaticMeshComponent0",
 			"mesh": 37
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_37_StaticMeshComponent0",
+			"name": "block15_StaticMeshComponent0",
 			"mesh": 38
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_38_StaticMeshComponent0",
+			"name": "block14_StaticMeshComponent0",
 			"mesh": 39
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_39_StaticMeshComponent0",
+			"name": "block13_StaticMeshComponent0",
 			"mesh": 40
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_40_StaticMeshComponent0",
+			"name": "block12_StaticMeshComponent0",
 			"mesh": 41
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_41_StaticMeshComponent0",
+			"name": "block11_StaticMeshComponent0",
 			"mesh": 42
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_42_StaticMeshComponent0",
+			"name": "block10_StaticMeshComponent0",
 			"mesh": 43
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_43_StaticMeshComponent0",
+			"name": "block9_StaticMeshComponent0",
 			"mesh": 44
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_44_StaticMeshComponent0",
+			"name": "block8_StaticMeshComponent0",
 			"mesh": 45
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_45_StaticMeshComponent0",
+			"name": "block7_StaticMeshComponent0",
 			"mesh": 46
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_46_StaticMeshComponent0",
+			"name": "block6_StaticMeshComponent0",
 			"mesh": 47
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_47_StaticMeshComponent0",
+			"name": "block5_StaticMeshComponent0",
 			"mesh": 48
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_48_StaticMeshComponent0",
+			"name": "block4_StaticMeshComponent0",
 			"mesh": 49
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_49_StaticMeshComponent0",
+			"name": "block3_StaticMeshComponent0",
 			"mesh": 50
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_50_StaticMeshComponent0",
+			"name": "block2_StaticMeshComponent0",
 			"mesh": 51
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_51_StaticMeshComponent0",
+			"name": "block1_StaticMeshComponent0",
 			"mesh": 52
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_52_StaticMeshComponent0",
+			"name": "block0_StaticMeshComponent0",
 			"mesh": 53
 		},
 		{
 			"name": "roof_roof",
-			"children": [ 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158 ]
+			"children": [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156 ]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_3_StaticMeshComponent0",
+			"name": "roof84_StaticMeshComponent0",
 			"mesh": 54
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_4_StaticMeshComponent0",
+			"name": "roof83_StaticMeshComponent0",
 			"mesh": 55
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_5_StaticMeshComponent0",
+			"name": "roof82_StaticMeshComponent0",
 			"mesh": 56
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_6_StaticMeshComponent0",
+			"name": "roof81_StaticMeshComponent0",
 			"mesh": 57
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_7_StaticMeshComponent0",
+			"name": "roof80_StaticMeshComponent0",
 			"mesh": 58
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_8_StaticMeshComponent0",
+			"name": "roof79_StaticMeshComponent0",
 			"mesh": 59
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_9_StaticMeshComponent0",
+			"name": "roof78_StaticMeshComponent0",
 			"mesh": 60
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_10_StaticMeshComponent0",
+			"name": "roof77_StaticMeshComponent0",
 			"mesh": 61
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_11_StaticMeshComponent0",
+			"name": "roof76_StaticMeshComponent0",
 			"mesh": 62
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_12_StaticMeshComponent0",
+			"name": "roof75_StaticMeshComponent0",
 			"mesh": 63
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_13_StaticMeshComponent0",
+			"name": "roof74_StaticMeshComponent0",
 			"mesh": 64
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_14_StaticMeshComponent0",
+			"name": "roof73_StaticMeshComponent0",
 			"mesh": 65
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_15_StaticMeshComponent0",
+			"name": "roof72_StaticMeshComponent0",
 			"mesh": 66
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_16_StaticMeshComponent0",
+			"name": "roof71_StaticMeshComponent0",
 			"mesh": 67
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_17_StaticMeshComponent0",
+			"name": "roof70_StaticMeshComponent0",
 			"mesh": 68
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_18_StaticMeshComponent0",
+			"name": "roof69_StaticMeshComponent0",
 			"mesh": 69
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_19_StaticMeshComponent0",
+			"name": "roof68_StaticMeshComponent0",
 			"mesh": 70
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_20_StaticMeshComponent0",
+			"name": "roof67_StaticMeshComponent0",
 			"mesh": 71
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_21_StaticMeshComponent0",
+			"name": "roof66_StaticMeshComponent0",
 			"mesh": 72
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_22_StaticMeshComponent0",
+			"name": "roof65_StaticMeshComponent0",
 			"mesh": 73
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_23_StaticMeshComponent0",
+			"name": "roof64_StaticMeshComponent0",
 			"mesh": 74
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_24_StaticMeshComponent0",
+			"name": "roof63_StaticMeshComponent0",
 			"mesh": 75
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_25_StaticMeshComponent0",
+			"name": "roof62_StaticMeshComponent0",
 			"mesh": 76
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_26_StaticMeshComponent0",
+			"name": "roof61_StaticMeshComponent0",
 			"mesh": 77
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_27_StaticMeshComponent0",
+			"name": "roof60_StaticMeshComponent0",
 			"mesh": 78
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_28_StaticMeshComponent0",
+			"name": "roof59_StaticMeshComponent0",
 			"mesh": 79
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_29_StaticMeshComponent0",
+			"name": "roof58_StaticMeshComponent0",
 			"mesh": 80
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_30_StaticMeshComponent0",
+			"name": "roof57_StaticMeshComponent0",
 			"mesh": 81
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_31_StaticMeshComponent0",
+			"name": "roof56_StaticMeshComponent0",
 			"mesh": 82
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_32_StaticMeshComponent0",
+			"name": "roof55_StaticMeshComponent0",
 			"mesh": 83
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_33_StaticMeshComponent0",
+			"name": "roof54_StaticMeshComponent0",
 			"mesh": 84
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_34_StaticMeshComponent0",
+			"name": "roof53_StaticMeshComponent0",
 			"mesh": 85
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_35_StaticMeshComponent0",
+			"name": "roof52_StaticMeshComponent0",
 			"mesh": 86
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_36_StaticMeshComponent0",
+			"name": "roof51_StaticMeshComponent0",
 			"mesh": 87
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_37_StaticMeshComponent0",
+			"name": "roof50_StaticMeshComponent0",
 			"mesh": 88
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_38_StaticMeshComponent0",
+			"name": "roof49_StaticMeshComponent0",
 			"mesh": 89
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_39_StaticMeshComponent0",
+			"name": "roof48_StaticMeshComponent0",
 			"mesh": 90
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_40_StaticMeshComponent0",
+			"name": "roof47_StaticMeshComponent0",
 			"mesh": 91
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_41_StaticMeshComponent0",
+			"name": "roof46_StaticMeshComponent0",
 			"mesh": 92
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_42_StaticMeshComponent0",
+			"name": "roof45_StaticMeshComponent0",
 			"mesh": 93
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_43_StaticMeshComponent0",
+			"name": "roof44_StaticMeshComponent0",
 			"mesh": 94
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_44_StaticMeshComponent0",
+			"name": "roof43_StaticMeshComponent0",
 			"mesh": 95
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_45_StaticMeshComponent0",
+			"name": "roof42_StaticMeshComponent0",
 			"mesh": 96
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_46_StaticMeshComponent0",
+			"name": "roof41_StaticMeshComponent0",
 			"mesh": 97
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_47_StaticMeshComponent0",
+			"name": "roof40_StaticMeshComponent0",
 			"mesh": 98
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_48_StaticMeshComponent0",
+			"name": "roof39_StaticMeshComponent0",
 			"mesh": 99
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_49_StaticMeshComponent0",
+			"name": "roof38_StaticMeshComponent0",
 			"mesh": 100
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_50_StaticMeshComponent0",
+			"name": "roof37_StaticMeshComponent0",
 			"mesh": 101
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_51_StaticMeshComponent0",
+			"name": "roof36_StaticMeshComponent0",
 			"mesh": 102
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_52_StaticMeshComponent0",
+			"name": "roof35_StaticMeshComponent0",
 			"mesh": 103
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_53_StaticMeshComponent0",
+			"name": "roof34_StaticMeshComponent0",
 			"mesh": 104
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_54_StaticMeshComponent0",
+			"name": "roof33_StaticMeshComponent0",
 			"mesh": 105
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_55_StaticMeshComponent0",
+			"name": "roof32_StaticMeshComponent0",
 			"mesh": 106
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_56_StaticMeshComponent0",
+			"name": "roof31_StaticMeshComponent0",
 			"mesh": 107
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_57_StaticMeshComponent0",
+			"name": "roof30_StaticMeshComponent0",
 			"mesh": 108
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_58_StaticMeshComponent0",
+			"name": "roof29_StaticMeshComponent0",
 			"mesh": 109
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_59_StaticMeshComponent0",
+			"name": "roof28_StaticMeshComponent0",
 			"mesh": 110
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_60_StaticMeshComponent0",
+			"name": "roof27_StaticMeshComponent0",
 			"mesh": 111
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_61_StaticMeshComponent0",
+			"name": "roof26_StaticMeshComponent0",
 			"mesh": 112
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_62_StaticMeshComponent0",
+			"name": "roof25_StaticMeshComponent0",
 			"mesh": 113
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_63_StaticMeshComponent0",
+			"name": "roof24_StaticMeshComponent0",
 			"mesh": 114
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_64_StaticMeshComponent0",
+			"name": "roof23_StaticMeshComponent0",
 			"mesh": 115
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_65_StaticMeshComponent0",
+			"name": "roof22_StaticMeshComponent0",
 			"mesh": 116
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_66_StaticMeshComponent0",
+			"name": "roof21_StaticMeshComponent0",
 			"mesh": 117
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_67_StaticMeshComponent0",
+			"name": "roof20_StaticMeshComponent0",
 			"mesh": 118
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_68_StaticMeshComponent0",
+			"name": "roof19_StaticMeshComponent0",
 			"mesh": 119
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_69_StaticMeshComponent0",
+			"name": "roof18_StaticMeshComponent0",
 			"mesh": 120
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_53_StaticMeshComponent0",
+			"name": "roof17_StaticMeshComponent0",
 			"mesh": 121
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_70_StaticMeshComponent0",
+			"name": "roof16_StaticMeshComponent0",
 			"mesh": 122
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_71_StaticMeshComponent0",
+			"name": "roof15_StaticMeshComponent0",
 			"mesh": 123
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_72_StaticMeshComponent0",
+			"name": "roof14_StaticMeshComponent0",
 			"mesh": 124
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_73_StaticMeshComponent0",
+			"name": "roof13_StaticMeshComponent0",
 			"mesh": 125
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_74_StaticMeshComponent0",
+			"name": "roof12_StaticMeshComponent0",
 			"mesh": 126
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_75_StaticMeshComponent0",
+			"name": "roof11_StaticMeshComponent0",
 			"mesh": 127
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_76_StaticMeshComponent0",
+			"name": "roof10_StaticMeshComponent0",
 			"mesh": 128
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_ExtrusionObject_54_StaticMeshComponent0",
+			"name": "roof9_StaticMeshComponent0",
 			"mesh": 129
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_77_StaticMeshComponent0",
+			"name": "roof8_StaticMeshComponent0",
 			"mesh": 130
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_78_StaticMeshComponent0",
+			"name": "roof7_StaticMeshComponent0",
 			"mesh": 131
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_79_StaticMeshComponent0",
+			"name": "roof6_StaticMeshComponent0",
 			"mesh": 132
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_80_StaticMeshComponent0",
+			"name": "roof5_StaticMeshComponent0",
 			"mesh": 133
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_81_StaticMeshComponent0",
+			"name": "roof4_StaticMeshComponent0",
 			"mesh": 134
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_82_StaticMeshComponent0",
+			"name": "roof3_StaticMeshComponent0",
 			"mesh": 124
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_83_StaticMeshComponent0",
+			"name": "roof2_StaticMeshComponent0",
 			"mesh": 135
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_84_StaticMeshComponent0",
+			"name": "roof1_StaticMeshComponent0",
 			"mesh": 136
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_85_StaticMeshComponent0",
+			"name": "roof0_StaticMeshComponent0",
 			"mesh": 137
 		},
 		{
 			"name": "path_path",
-			"children": [ 160, 161, 162, 163, 164, 165, 166, 167 ]
+			"children": [ 158, 159, 160, 161, 162, 163, 164, 165 ]
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_86_StaticMeshComponent0",
+			"name": "path7_StaticMeshComponent0",
 			"mesh": 138
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_87_StaticMeshComponent0",
+			"name": "path6_StaticMeshComponent0",
 			"mesh": 139
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_88_StaticMeshComponent0",
+			"name": "path5_StaticMeshComponent0",
 			"mesh": 140
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_89_StaticMeshComponent0",
+			"name": "path4_StaticMeshComponent0",
 			"mesh": 141
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_90_StaticMeshComponent0",
+			"name": "path3_StaticMeshComponent0",
 			"mesh": 142
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_91_StaticMeshComponent0",
+			"name": "path2_StaticMeshComponent0",
 			"mesh": 143
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_92_StaticMeshComponent0",
+			"name": "path1_StaticMeshComponent0",
 			"mesh": 144
 		},
 		{
-			"name": "Unamed_Rhino_DocObjects_BrepObject_93_StaticMeshComponent0",
+			"name": "path0_StaticMeshComponent0",
 			"mesh": 145
 		}
 	],
 	"samplers": [
 		{
-			"name": "Bare_concrete_03_BaseColor",
+			"name": "siteM_BaseColor",
 			"minFilter": 9987,
 			"magFilter": 9729
 		},
 		{
-			"name": "Chestnut_01_A_BaseColor",
+			"name": "siteM_MetallicRoughness",
 			"minFilter": 9987,
 			"magFilter": 9729
 		},
 		{
-			"name": "Chestnut_01_A_MetallicRoughness",
+			"name": "columnM_BaseColor",
 			"minFilter": 9987,
 			"magFilter": 9729
 		},
 		{
-			"name": "Chestnut_01_A_Normal",
+			"name": "columnM_MetallicRoughness",
 			"minFilter": 9987,
 			"magFilter": 9729
 		},
 		{
-			"name": "Ipe_A_BaseColor",
+			"name": "columnM_Normal",
 			"minFilter": 9987,
 			"magFilter": 9729
 		},
 		{
-			"name": "Ipe_A_MetallicRoughness",
+			"name": "roofM_BaseColor",
 			"minFilter": 9987,
 			"magFilter": 9729
 		},
 		{
-			"name": "Ipe_A_Normal",
+			"name": "roofM_Normal",
+			"minFilter": 9987,
+			"magFilter": 9729
+		},
+		{
+			"name": "pathM_BaseColor",
+			"minFilter": 9987,
+			"magFilter": 9729
+		},
+		{
+			"name": "pathM_MetallicRoughness",
+			"minFilter": 9987,
+			"magFilter": 9729
+		},
+		{
+			"name": "pathM_Normal",
 			"minFilter": 9987,
 			"magFilter": 9729
 		}
@@ -15054,44 +15048,59 @@
 	"scenes": [
 		{
 			"name": "Main",
-			"nodes": [ 0, 1, 2, 7, 8, 11, 12, 13 ]
+			"nodes": [ 0, 1, 2, 7, 8, 9, 10, 11 ]
 		}
 	],
 	"textures": [
 		{
-			"name": "Bare_concrete_03_BaseColor",
+			"name": "siteM_BaseColor",
 			"sampler": 0,
 			"source": 0
 		},
 		{
-			"name": "Chestnut_01_A_BaseColor",
+			"name": "siteM_MetallicRoughness",
 			"sampler": 1,
 			"source": 1
 		},
 		{
-			"name": "Chestnut_01_A_MetallicRoughness",
+			"name": "columnM_BaseColor",
 			"sampler": 2,
 			"source": 2
 		},
 		{
-			"name": "Chestnut_01_A_Normal",
+			"name": "columnM_MetallicRoughness",
 			"sampler": 3,
 			"source": 3
 		},
 		{
-			"name": "Ipe_A_BaseColor",
+			"name": "columnM_Normal",
 			"sampler": 4,
 			"source": 4
 		},
 		{
-			"name": "Ipe_A_MetallicRoughness",
+			"name": "roofM_BaseColor",
 			"sampler": 5,
 			"source": 5
 		},
 		{
-			"name": "Ipe_A_Normal",
+			"name": "roofM_Normal",
 			"sampler": 6,
 			"source": 6
+		},
+		{
+			"name": "pathM_BaseColor",
+			"sampler": 7,
+			"source": 7
+		},
+		{
+			"name": "pathM_MetallicRoughness",
+			"sampler": 8,
+			"source": 8
+		},
+		{
+			"name": "pathM_Normal",
+			"sampler": 9,
+			"source": 9
 		}
 	],
 	"extensions":
